@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/courses.css">
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <!-- ====================  Header ==================== -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="./assets/images/logo.svg" alt="eduPress-logo" />
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./courses.html">Courses</a>
+                    </li>
+                    <li>
+                        <a href="./Blog.html">Blog</a>
+                    </li>
+                    <li class="active">
+                        <select class="se-active" name="pages" onchange = "location = this.value">
+                            <option value="FAQs.html" class="active">pages</option>
+                            <option value="Contact.html">Contact</option>
+                            <option value="FAQs.html">FAQs</option>
+                          </select>
+                    </li>
+                    <li>
+                        <a href="#">Premium Theme</a>
+                    </li>  
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="./login-register.html">Login / Register</a>
+                    <span>
+                        <img src="./assets/images/icons/search.svg" alt="search-icon" />
+                    </span>
+                </div>
+
+                <img
+                src="./assets/images/icons/menu-icon.svg"
+                alt="menu-icon"
+                class="menu-icon"
+                />
+        </div>
+        </nav>
+
+        <section class="sub-header">
+            <div class="container">
+                <div class="item-sub-header">
+                    <span class="item-sub-header-1">Homepage</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span class="item-sub-header-span-2">Contact</span>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- ==================== Contact ==================== -->
+    <section id="contact" class="section-mt section-courses">
+        <div class="container">
+            <div class="map-info">
+                <div class="location-info">
+                    <h1>Need A Direct Line?</h1>
+                    <p>Cras massa et odio donec faucibus in. Vitae pretium massa dolor ullamcorper lectus elit quam.</p>
+                    <div class="info">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone map-icon"></i>
+                        </div>
+                        <div class="details">
+                            <span class="title">Phone</span>
+                            <span class="number">(123) 456 7890</span>
+                        </div>
+                    </div>
+                    <div class="info" >
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope map-icon"></i>
+                        </div>
+                        <div class="details">
+                            <span class="title">Email</span>
+                            <span class="number">contact@thimpress.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13319.393678472727!2d36.23700854345399!3d33.42719602437597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1519205a464317e7%3A0xa8ffd6dec71e1de5!2z2LXYrdmG2KfZitin2Iwg2LPZiNix2YrYpw!5e0!3m2!1sar!2sro!4v1729711286009!5m2!1sar!2sro" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <div class="form">
+                <h2>Contact us</h2>
+                <p>Your email address will not be published. Required fields are marked *</p>
+                <form action="./contact.html" method="post">
+                    <input type="text"  name="text" placeholder="Name*">
+                    <input type="email" name="text" placeholder="Email*">
+                    <input type="text"  name="text" placeholder="comment" class="w-input">
+                    <input type="checkbox" name="checkbox" class="chk-input">
+                        <label for="checkbox">Save my name, email in this brower for the next time I comment</label><br>
+                    <button class="btn primary-btn">Posts comment</button>
+                </form>
+              
+            </div>
+        </div>
+    </section>
+    <!-- ================== Footer ===================== -->
+    <footer class="section-mt">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="col">
+                    <img src="./assets/images/logo.svg" alt="" class="logo" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <h4>GET HELP</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Latest Articles</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>PROGRAMS</h4>
+                    <ul>
+                        <li><a href="#">Art & Design</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">IT & Software</a></li>
+                        <li><a href="#">Languages</a></li>
+                        <li><a href="#">Programming</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>CONTACT US</h4>
+                    <div class="contact-info">
+                        <p>
+                        Address: 2321 New Design Str, Lorem <br />
+                        Ipsum10 Hudson Yards, USA
+                        </p>
+
+                        <div>
+                            <p>Tel: + (123) 2500-567-8988</p>
+                            <p>Mail: supportlms@gmail.com</p>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer-bottom">
+                Copyright © 2024 LearnPress LMS | Powered by ThimPress
+            </p>
+
+        </div>
+    </footer>
+</body>
+</html>

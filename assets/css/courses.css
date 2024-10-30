@@ -1,0 +1,167 @@
+/* ======================= bg sub header ======================================*/
+header{
+    .sub-header{
+        padding: 72px 0;
+        height: 60px;
+        background-color: var(--light-gray);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1;
+    
+        .container{
+            padding: 18px 0;
+            .item-sub-header{
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                    .item-sub-header-1 , .item-sub-header-span-2{
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: var(--secondary-font);
+                        color: var(--dark-gray);
+                    }
+                    .item-sub-header-span-2{
+                        color: var(--grey-color);
+                        
+                    }
+                    i{
+                        color: var(--grey-color);
+                        font-size: 8px;
+                    }
+            }
+        }
+        
+    }
+} 
+
+/* ======================= courses ======================================*/
+
+.section-courses{
+    padding-top: 116px;
+        .container{
+            .courses-header{
+                .section-filter{
+                    .filters{
+                        display: flex; 
+                        gap: 20px;
+                        .filter-search{
+                            padding-left: 20px;
+                            position: relative;
+                            input{
+                                width: 270px;
+                                border: none;
+                                border-bottom: 1px solid var(--black-color);
+                                outline: none;
+                            }
+                            #search{
+                                position: absolute;
+                                right: 6px;
+                            }
+                        } 
+                    }
+                        
+                        
+                }
+            }
+                .courses-cards{
+                    .course{
+                        .course-footer {
+                            padding: 16px 20px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            p {
+                                color: var(--grey-color);
+                            }
+                            span {
+                                color: #55be24;
+                            }
+                            a {
+                                font-weight: 500;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+            }
+    
+    }
+    
+}
+
+/* ======================= slider  ======================================*/
+    #slider{
+        .container{
+            .slider-move{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+            }
+            .btn-slider{
+                background:none;
+            }
+            .border-slide{
+                padding: 10px 18px;
+                width: 48px;
+                height: 48px;
+                border: 1px solid var(--primary-border);
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .slide-l , .slide-r{
+                font-size: 10px;
+            }
+            
+            span,a{
+                font-size: 18px;
+                font-weight: 500;
+                font-family: var(--secondary-font);
+                &.active-slide{
+                    background-color: var(--black-color);
+                }
+                a&.active-slide{
+                    color: var(--white-color);
+                }
+            }
+        }
+    }
+
+/* ======================= responsive courses ======================================*/
+@media screen and (max-width: 992px) {
+    header{
+        .sub-header{
+            margin-bottom: 56px;
+        }
+    }
+    .section-courses{
+        .container{
+            .courses-header{
+                padding-top: 56px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                    .section-title{
+                        padding-bottom: 32px;
+                    }
+                    .section-filter{
+                        .filters{
+                            .filter-search{
+                                input{
+                                    width: 240px;
+                                }
+                            }
+                            
+                        }
+                    }
+            }
+        }
+    }
+    #slider{
+        margin-bottom: 70px;
+    }
+    
+}

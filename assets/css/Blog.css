@@ -1,0 +1,35 @@
+.blog{
+    .container{
+        .blog-card{
+            .blog{
+                cursor: pointer;
+                .blog-details{
+                    padding: 20px 20px;
+                    h4{
+                        font-size: 20px;
+                        font-weight: 600;
+                        font-family: var(--primary-font);
+                    }
+                    i{
+                        padding-top: 16px;
+                        color: var(--primary-color);
+                        span{
+                            padding-left: 4px;
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-family: var( --secondary-font);
+                            color: var(--dark-gray);
+                        }
+                    }
+                    p{
+                        padding-top: 16px;
+                        font-size: 18px;
+                        font-weight: 400;
+                        font-family: var(--secondary-font);
+                        color: var(--dark-gray);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#FAQs{
+    .container{
+        h1{
+            font-size: 32px;
+            font-weight: 600;
+            font-family: var(--primary-font);
+            color: var(--black-color);
+        }
+        .accordings{
+            margin-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            #according{
+                width: 594px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li{
+                    list-style: none;
+                    width: 100%;
+                    margin: 10px 0;
+                    padding: 20px 30px;
+                    background-color: var(--light-gray);
+                    border: 1px solid var(--light-gray);
+                    border-radius: 8px;
+                    box-shadow:  6px 6px 6px -1px rgba(0, 0, 0, 0.15);
+                                -6px -6px 10px -1px rgba(255, 255, 255, 0.7); 
+                        
+                        label{
+                            padding: 10px 0;
+                            font-size: 16px;
+                            font-weight: 600;
+                            font-family: var(--primary-font);
+                            color: var(--black-color);
+                            cursor: pointer;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                                span{
+                                        transform: rotate(90deg);
+                                        width: 12PX;
+                                        height: 8px;
+                                        font-size: 22PX;
+                                        color: var(--grey-color);
+                                    }
+                                    
+                        }
+    
+                        label + input[type="radio"]{
+                            display: none;
+                        }
+    
+                        .contenet{
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-weight: var(--secondary-font);
+                            line-height: 27px;
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: max-height 0.5s;
+                        }
+                
+                }
+                label + input[type="radio"]:checked{
+                    color: var(--primary-color);
+                }
+                label + input[type="radio"]:checked + .contenet{
+                    max-height: 400px;
+                    
+                }
+            }
+        }
+        .img-faq{
+            margin-top: 50px;
+            height: 320px;
+            
+        }
+    }
+}
+
+

@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#login-register{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        .login{
+            margin-bottom: 70px; 
+        }
+        .login , .register{
+            padding: 30px 30px;
+            border: 1px solid var(--primary-border);
+            border-radius: 20px;
+            h2{
+                padding-bottom: 30px;
+                font-size: 32px;
+                font-weight: 600;
+                font-family: var(--secondary-font);
+                color: var(--black-color);
+            }
+            input{
+                padding: 10px 16px;
+                margin-top: 20px;
+                width: 579px;
+                height: 48px;
+                background-color: var(--white-color);
+                border: 1px solid var(--grey-color);
+                border-radius: 8px;
+            }
+            ::placeholder{
+                font-size: 18px;
+                font-weight: 400;
+                font-family: var(--secondary-font);
+                color: var(--grey-color);
+            }
+            .pass-hint{
+                position: relative;
+            }
+            .show-hint{
+                position: absolute;
+                top: 50%;
+                left: 93%;
+            }
+            input[type="checkbox"]{
+                width: 12px;
+                height: 12px;
+                color: var(--Dark_gray, #555555);
+                accent-color: var(--chk-input);
+            }
+            label{
+                font-size: 18px;
+                font-weight: 400; 
+                font-family: var(--secondary-font);
+                color: var(--Dark_gray);
+            }
+         
+            .w-button{
+                margin-top: 30px;
+                width: 100%;
+                display: flex;
+                justify-content:center;
+                align-items: center;
+            }
+            span a{
+               font-size: 18px;
+               font-weight: 400; 
+               font-family: var(--secondary-font);
+               color: var(--black-color);
+            }
+            .pass-hint-reg{
+                position: relative;
+            }
+            .show-hint-reg{
+                position: absolute;
+                top: 55%;
+                left: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 992px) {
+    #login-register{
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 70px;
+                .login , .register{
+                    width: 100%;
+                  input{
+                    width: 100%;
+                  }
+                }
+        }
+
+    }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/courses.css">
+    <link rel="stylesheet" href="./assets/css/login-register.css">
+    <title>Login/Register</title>
+</head>
+<body>
+    <!-- ====================  Header ==================== -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="./assets/images/logo.svg" alt="eduPress-logo" />
+                </div>
+
+                <ul>
+                    <li class="active">
+                        <a href="./index.html" class="active">Home</a>
+                    </li>
+                    <li >
+                        <a href="./courses.html" class="active">Courses</a>
+                    </li>
+                    <li>
+                        <a href="./Blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <select class="se-active" name="pages" onchange = "location = this.value">
+                            <option value="FAQs.html">pages</option>
+                            <option value="Contact.html">Contact</option>
+                            <option value="FAQs.html">FAQs</option>
+                        </select>
+                    </li>
+                    <li>
+                        <a href="#">Premium Theme</a>
+                    </li>  
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="./login-register.html" class="active">Login / Register</a>
+                    <span>
+                        <img src="./assets/images/icons/search.svg" alt="search-icon" />
+                    </span>
+                </div>
+
+                <img
+                src="./assets/images/icons/menu-icon.svg"
+                alt="menu-icon"
+                class="menu-icon"
+                />
+        </div>
+        </nav>
+
+        <section class="sub-header">
+            <div class="container">
+                <div class="item-sub-header">
+                    <span class="item-sub-header-1">Homepage</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span class="item-sub-header-span-2">Login / Register</span>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- ================== Login / Register  ===================== -->
+    <section id="login-register" class="section-mt section-courses">
+        <div class="container">
+            <div class="login">
+                <h2>Login</h2>
+                <form action="./login-register.html" method="post">
+                    <input type="Email" name="txt" placeholder="Email or username*">
+                    <div class="pass-hint">
+                        <input type="Password" name="Password" placeholder="Password*">
+                        <img src="./assets/images/icons/password-show.svg" alt="password-show" class="show-hint">
+                    </div>
+                    <input type="checkbox" name="chk">
+                        <label for="chk">Remember me</label><br>
+                    <button class="btn primary-btn w-button">Login</button><br>
+                    <span><a href="#">Lost your password?</a></span>
+                </form>
+            </div>
+
+            <div class="register">
+                <h2>Register</h2>
+                <form action="./login-register.html" method="post">
+                    <input type="Email" name="txt" placeholder="Email*">
+                    <input type="username" name="Password" placeholder="username*">
+                    <div class="pass-hint-reg">
+                        <input type="Password" name="Password" placeholder="Password*">
+                            <img src="./assets/images/icons/password-show.svg" alt="password-show" class="show-hint-reg">
+                    </div>
+                    <div class="pass-hint-reg">
+                        <input type="Password" name="confirm-Password" placeholder="Confirm Password*">
+                            <img src="./assets/images/icons/password-show.svg" alt="password-show" class="show-hint-reg">
+                    </div>
+                    <button class="btn primary-btn w-button">Register</button><br>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================== Footer ===================== -->
+    <footer class="section-mt">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="col">
+                    <img src="./assets/images/logo.svg" alt="" class="logo" />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+                <div class="col">
+                    <h4>GET HELP</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Latest Articles</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>PROGRAMS</h4>
+                    <ul>
+                        <li><a href="#">Art & Design</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">IT & Software</a></li>
+                        <li><a href="#">Languages</a></li>
+                        <li><a href="#">Programming</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>CONTACT US</h4>
+                    <div class="contact-info">
+                        <p>
+                        Address: 2321 New Design Str, Lorem <br />
+                        Ipsum10 Hudson Yards, USA
+                        </p>
+
+                        <div>
+                            <p>Tel: + (123) 2500-567-8988</p>
+                            <p>Mail: supportlms@gmail.com</p>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer-bottom">
+                Copyright © 2024 LearnPress LMS | Powered by ThimPress
+            </p>
+
+        </div>
+    </footer>
+</body>
+</html>
