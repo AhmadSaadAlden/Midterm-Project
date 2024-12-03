@@ -12,72 +12,58 @@
             font-family: var(--primary-font);
             color: var(--black-color);
         }
-        .accordings{
-            margin-top: 50px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            #according{
-                width: 594px;
+            .accordion {
                 display: flex;
-                flex-wrap: wrap;
                 justify-content: space-between;
-                li{
-                    list-style: none;
-                    width: 100%;
-                    margin: 10px 0;
-                    padding: 20px 30px;
-                    background-color: var(--light-gray);
-                    border: 1px solid var(--light-gray);
-                    border-radius: 8px;
-                    box-shadow:  6px 6px 6px -1px rgba(0, 0, 0, 0.15);
-                                -6px -6px 10px -1px rgba(255, 255, 255, 0.7); 
-                        
-                        label{
-                            padding: 10px 0;
-                            font-size: 16px;
-                            font-weight: 600;
-                            font-family: var(--primary-font);
-                            color: var(--black-color);
-                            cursor: pointer;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                border-radius: 8px;
+                .accordion_one{
+                    width: 594px;
+                    .accordion-item{
+                        border-radius: 8px;
+                        overflow: hidden;
+                        margin-bottom: 30px;
+                            .accordion-header {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 20px 30px;
+                                background-color: var(--light-gray);
+                                cursor: pointer;
+                                color: #000;
                                 span{
-                                        transform: rotate(90deg);
-                                        width: 12PX;
-                                        height: 8px;
-                                        font-size: 22PX;
-                                        color: var(--grey-color);
-                                    }
-                                    
-                        }
-    
-                        label + input[type="radio"]{
-                            display: none;
-                        }
-    
-                        .contenet{
-                            font-size: 18px;
-                            font-weight: 400;
-                            font-weight: var(--secondary-font);
-                            line-height: 27px;
-                            max-height: 0;
-                            overflow: hidden;
-                            transition: max-height 0.5s;
-                        }
-                
+                                    font-weight: bold;
+                                }
+                            }
+                            .accordion-content {
+                                padding: 20px 30px;
+                                font-size: 18px;
+                                color: var(--dark-gray);
+                                background-color: var(--light-gray);
+                                font-weight: var(--secondary-font);
+                                line-height: 27px;
+                                overflow: hidden;
+                                max-height: 0;
+                                transition: max-height 0.5s;
+                            }
+                    }
+                    details[open] .accordion-header { 
+                        color: var(--primary-color);
+                    }
+                    details[open] .chevron { 
+                        transform: rotate(180deg);
+                    } 
+                    .chevron { 
+                        transition: transform 0.2s ease; 
+                    }
+                    details[open] .accordion-content { 
+                        max-height: 400px;
+                    }
                 }
-                label + input[type="radio"]:checked{
-                    color: var(--primary-color);
-                }
-                label + input[type="radio"]:checked + .contenet{
-                    max-height: 400px;
                     
-                }
             }
-        }
         .img-faq{
             margin-top: 50px;
             height: 320px;
@@ -87,3 +73,14 @@
 }
 
 
+@media screen and (max-width: 992px) {
+    .accordion{
+        flex-direction: column;
+        .accordion_one { 
+            width: 100%;
+            .accordion-item {
+                width: 100%; 
+            }
+        } 
+    }
+}
