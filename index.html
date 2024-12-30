@@ -22,7 +22,7 @@
           <div class="logo">
             <img src="./assets/images/logo.svg" alt="eduPress-logo" />
           </div>
-          <ul>
+          <ul class="nav-menu-icons">
             <li class="active">
               <a href="./index.html" class="active">Home</a>
             </li>
@@ -31,17 +31,24 @@
             <li>
               <a href="./Blog.html">Blog</a>
             </li>
-            <li>
-              <select class="se-active" name="pages" onchange = "location = this.value">
+            <li class="dropdown-menu"> Pages &nbsp <i class="fa-solid fa-chevron-down"></i>
+              <ul class="dropdown-list">
+                <li class="dropdown-list-item">
+                  <a href="./contact.html">Contact</a>
+                </li>
+                <li class="dropdown-list-item">
+                  <a href="./FAQs.html">FAQs</a>
+                </li>
+              </ul>
+              <!-- <select class="se-active" name="pages" onchange = "location = this.value">
                 <option value="FAQs.html">pages</option>
                 <option value="Contact.html">Contact</option>
                 <option value="FAQs.html">FAQs</option>
-              </select>
+              </select> -->
             </li>
               
             </li>
             <li><a href="#">Premium Theme</a></li>
-            
           </ul>
           
           <div class="nav-actions">
@@ -50,11 +57,17 @@
               <img src="./assets/images/icons/search.svg" alt="search-icon" />
             </span>
           </div>
-          <img
+          <div class="icons-container">
+            <img
             src="./assets/images/icons/menu-icon.svg"
             alt="menu-icon"
             class="menu-icon"
           />
+            <img src="./assets/images/icons/x-icons.svg" 
+            alt="x-icons" 
+            class="x-icons"
+            />
+          </div>
         </div>
       </nav>
       <section class="hero-section">
@@ -360,5 +373,6 @@
         </p>
       </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

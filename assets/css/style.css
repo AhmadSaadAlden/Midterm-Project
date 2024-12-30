@@ -87,7 +87,8 @@ nav {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 20px;  
+        padding: 0 20px; 
+        position: relative; 
         &.active {
           background-color: var(--light-gray);
           a{
@@ -95,7 +96,7 @@ nav {
           }
           
         }
-        &.se-active{
+       /*  &.se-active{
           color: var(--primary-color)
         }
         
@@ -107,8 +108,47 @@ nav {
           option{
             color: var(--black-color);
           }
-        }
+        } */
       }
+      .dropdown-menu { 
+        cursor: pointer;
+      }
+      .dropdown-menu i {
+        margin-left: 5px; 
+        transition: transform 0.3s; 
+      }
+      .dropdown-list { 
+        display: none;
+        position: absolute;
+        top: 100%; 
+        left: 0; 
+        background-color: var(--white-color); 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        border-radius: 5px; 
+        z-index: 1000; 
+        min-width: 150px; 
+        height: max-content;
+      }
+      .dropdown-list-item {
+        list-style: none;
+        padding: 0; 
+      }
+      .dropdown-list-item a { 
+        color: #333; 
+        text-decoration: none; 
+        display: block; 
+        transition: background-color 0.3s, color 0.3s; 
+        padding: 10px; 
+        width: 100%;
+        text-align: center;
+      }
+      .dropdown-list-item a:hover { 
+        background-color: #f0f0f0; 
+        color: #007bff;
+      }
+    /*   .dropdown-menu:hover .dropdown-list { 
+        display: block;
+      } */
     }
   }
   
@@ -129,8 +169,17 @@ nav {
         cursor: pointer;
       }
     }
-    .menu-icon {
+    .icons-container{
+      position: relative;
+    }
+    .menu-icon,.x-icons {
       display: none;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .menu-icon.visible, .x-icons.visible {
+      opacity: 1; 
     }
   }
 
@@ -204,10 +253,13 @@ footer {
       .nav-actions {
         display: none;
       }
-      .menu-icon {
-        display: block;
-      }
-
+        .menu-icon {
+          display: block;
+        }
+    }
+    nav.visible .nav-menu-icons { 
+      display: flex; 
+      flex-direction: column; 
     }
   }
   footer {
